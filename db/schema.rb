@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20190719213558) do
 
   create_table "notes", force: :cascade do |t|
     t.string   "content"
     t.integer  "user_id"
+=======
+ActiveRecord::Schema.define(version: 20190719200932) do
+
+  create_table "notes", force: :cascade do |t|
+    t.string   "content"
+>>>>>>> 64358601434b9d33ee6efb852bf0ce7a67778400
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,8 +33,11 @@ ActiveRecord::Schema.define(version: 20190719213558) do
   end
 
   create_table "viewers", force: :cascade do |t|
+<<<<<<< HEAD
     t.integer  "note_id"
     t.integer  "user_id"
+=======
+>>>>>>> 64358601434b9d33ee6efb852bf0ce7a67778400
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
